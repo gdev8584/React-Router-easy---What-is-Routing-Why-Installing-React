@@ -6,13 +6,11 @@ import NoteFound from "./Pages/NotFound";
 
 const AppRoutes = () => {
   return (
-    <>
       <Routes>
-        <Route path="/home" element={<Home />}></Route>
         <Route path="/" element={<Index />}></Route>
+        <Route path="/home" element={<Home />}></Route>
         <Route path="*" element={<NoteFound />}></Route>
       </Routes>
-    </>
   );
 };
 export default AppRoutes;
